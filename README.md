@@ -45,6 +45,14 @@ curl "http://localhost:4000?url=https%3A%2F%2Fapi.example.com%2Fdata"
 
 If `url` is missing or invalid, the server responds with `400` and an error message.
 
+### Health check (deployment success)
+
+```text
+GET <baseurl>/health
+```
+
+Returns `200` and `{ "status": "ok", "deployed": true }` when the app is running. Use this for deployment checks or load balancer health probes (not rate-limited).
+
 ## Allowed origins (CORS)
 
 Only these origins get CORS headers and can call the proxy from the browser:
