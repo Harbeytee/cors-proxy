@@ -1,0 +1,16 @@
+{
+  "name": "cors-proxy",
+  "version": "1.0.0",
+  "description": "CORS proxy - fetch any URL via ?url= query param",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  }
+}
